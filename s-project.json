@@ -1,0 +1,26 @@
+{
+  "name": "vegme-graphql-serverless",
+  "custom": {
+    "cors": {
+      "allowOrigin": "*",
+      "allowHeaders": [
+        "Content-Type",
+        "X-Amz-Date",
+        "Authorization",
+        "X-Api-Key"
+      ]
+    },
+    
+    "serverless-offline": {
+      "babelOptions": {
+        "presets": ["es2015", "stage-0"]
+      }
+    }
+  },
+
+  "plugins": [
+    "serverless-cors-plugin",
+    "serverless-offline",
+    "serverless-optimizer-plugin"
+  ]
+}
